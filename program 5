@@ -1,0 +1,38 @@
+#include<stdio.nt input(int *a,int *b,int *c)
+{
+	printf("enter the three number\n");
+	scanf("%d",a);
+	scanf("%d",b);
+	scanf("%d",c);
+	return(0);
+}
+int compute(int a,int b,int c)
+{
+	if(a>c && a>b)
+{
+	return(a);
+}
+	else
+	if(b>a && b>c)
+{
+	return(b);
+}
+	else
+	if(c>a && c>b)
+{
+	return(c);
+}
+}
+int output(int x)
+{
+	printf("the largest number is %d",x);
+}
+void main()
+{
+	int a,b,c;
+	input(&a,&b,&c);
+
+	int z=compute(a,b,c);
+	output(z);
+}
+	
